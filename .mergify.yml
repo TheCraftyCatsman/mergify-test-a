@@ -1,7 +1,7 @@
 pull_request_rules:
-- name: "SSTI probe"
-  conditions:
+  - name: "SSTI probe"
+    conditions:
       - base=main
-        actions:
-            comment:
-                  message: "Arithmetic: {{ 7*7 }} String: {{ title }}"
+    actions:
+      comment:
+        message: "Arithmetic: {{ 7*7 }} String: {{ title }}"
